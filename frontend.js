@@ -96,7 +96,7 @@ $(function () {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'api_access_token': 'ТВОЙ_ТОКЕН'
+                'api_access_token': 'Ru492JrTeYf4eFYGA2STBDHq'
             },
             body: JSON.stringify({ content: msg })
         });
