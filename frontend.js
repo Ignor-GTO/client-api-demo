@@ -94,7 +94,10 @@ $(function () {
     async function sendMessage(msg) {
         await fetch(`${chatwoot.chatwootAPIUrl}inboxes/${chatwoot.inboxIdentifier}/contacts/${chatwoot.contactIdentifier}/conversations/${chatwoot.contactConversation}/messages`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Content-Type': 'application/json',
+                'api_access_token': 'ТВОЙ_ТОКЕН'
+            },
             body: JSON.stringify({ content: msg })
         });
     }
