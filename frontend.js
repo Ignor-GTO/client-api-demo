@@ -59,7 +59,7 @@ $(function () {
             status.text('Error');
             input.attr('disabled', 'disabled').val('Unable to communicate with the WebSocket server.');
         }
-    }, 3000);
+    }, 80);
 
     function addMessage(author, message) {
         content.append('<p><span>' + author + '</span>: ' + message + '</p>');
